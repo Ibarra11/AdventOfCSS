@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    src: url('./assets/fonts/bebasneue-book-webfont.woff');
+  }
+  @font-face {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    src: url('./assets/fonts/bebasneue-book-webfont.woff2');
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/montserrat-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+      url('./assets/fonts/montserrat-v18-latin-regular.eot?#iefix')
+        format('embedded-opentype'),
+      /* IE6-IE8 */ url('./assets/fonts/montserrat-v18-latin-regular.woff2')
+        format('woff2'),
+      /* Super Modern Browsers */
+        url('./assets/fonts/montserrat-v18-latin-regular.woff') format('woff'),
+      /* Modern Browsers */
+        url('./assets/fonts/montserrat-v18-latin-regular.ttf')
+        format('truetype'),
+      /* Safari, Android, iOS */
+        url('./assets/fonts/montserrat-v18-latin-regular.svg#Montserrat')
+        format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/montserrat-v18-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+      url('./assets/fonts/montserrat-v18-latin-700.eot?#iefix')
+        format('embedded-opentype'),
+      /* IE6-IE8 */ url('./assets/fonts/montserrat-v18-latin-700.woff2')
+        format('woff2'),
+      /* Super Modern Browsers */
+        url('./assets/fonts/montserrat-v18-latin-700.woff') format('woff'),
+      /* Modern Browsers */ url('./assets/fonts/montserrat-v18-latin-700.ttf')
+        format('truetype'),
+      /* Safari, Android, iOS */
+        url('./assets/fonts/montserrat-v18-latin-700.svg#Montserrat')
+        format('svg'); /* Legacy iOS */
+  }
+}
+@layer utilities {
+  .inner-border {
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 50% 50%, 50% 100%, 0% 100%);
+  }
+  .w-500 {
+    width: 500px;
+  }
+  .h-500 {
+    height: 500px;
+  }
+
+  .controls {
+    top: calc(100% + 24px);
+  }
+
+  .timer {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .start-btn {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .timer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+  }
+
+  .fill-icon {
+    filter: invert(30%) sepia(5%) saturate(60%) hue-rotate(314deg)
+      brightness(101%) contrast(82%);
+  }
+}
