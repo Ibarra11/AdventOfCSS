@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .card {
+        height: 90%;
+        width: 375px;
+        border-radius: 25px;
+    }
+
+    .text-h2 {
+        font-size: 32px;
+    }
+
+    .plate {
+        width: 135px;
+    }
+
+    .h-5p {
+        height: 15%;
+    }
+    .h-95p {
+        height: 85%;
+    }
+
+    .h-600 {
+        height: 650px;
+    }
+}
